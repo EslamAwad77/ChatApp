@@ -10,6 +10,8 @@ import PushNotifications
 import FirebaseMessaging
 import FirebaseCore
 
+
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate{
     
@@ -22,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         self.pushNotifications.start(instanceId: "YOUR_INSTANCE_ID") // Can be found here: https://dash.pusher.com
         try! self.pushNotifications.addDeviceInterest(interest: "debug-test")
         self.pushNotifications.registerForRemoteNotifications()
+        FirebaseApp.configure()
         return true
     }
     

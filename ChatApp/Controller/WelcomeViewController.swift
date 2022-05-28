@@ -12,6 +12,10 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var lblChat: CLTypingLabel!
     
+    @IBAction func btnRegister(_ sender: UIButton) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "RegisterVC") as! LoginViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
     @IBAction func btnLogin(_ sender: UIButton) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginVC") as! LoginViewController
         navigationController?.pushViewController(vc, animated: true)
