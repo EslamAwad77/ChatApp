@@ -7,6 +7,8 @@
 
 import UIKit
 import PushNotifications
+import FirebaseMessaging
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate{
