@@ -9,8 +9,12 @@ import UIKit
 import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
-
+    
+    //---------------------- outlet ---------------
+    
     @IBOutlet weak var lblChat: CLTypingLabel!
+    
+    //---------------------- Actions ---------------
     
     @IBAction func btnRegister(_ sender: UIButton) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "RegisterVC") as! RegisterViewController
@@ -21,6 +25,8 @@ class WelcomeViewController: UIViewController {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginVC") as! LoginViewController
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    //---------------------- LifeCycle ---------------
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,14 +44,6 @@ class WelcomeViewController: UIViewController {
         navigationController?.isNavigationBarHidden = false
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 }

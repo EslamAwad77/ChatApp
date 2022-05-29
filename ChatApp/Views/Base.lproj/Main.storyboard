@@ -103,7 +103,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cWK-wG-Ggs">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cWK-wG-Ggs">
                                 <rect key="frame" x="88" y="129" width="239" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -218,24 +218,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aRy-eh-dv4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="833"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableCell" id="x0l-tT-tLD">
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableCell" id="x0l-tT-tLD">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x0l-tT-tLD" id="Nov-iT-N7w">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" systemColor="linkColor"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="linkColor"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5x8-e2-JAW">
                                 <rect key="frame" x="0.0" y="825" width="414" height="71"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="write a message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Za-XX-5Aq">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="write a new message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Za-XX-5Aq">
                                         <rect key="frame" x="8" y="8" width="331" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="331" id="zpN-3x-D6w"/>
@@ -243,21 +243,27 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRK-JA-D2T">
-                                        <rect key="frame" x="347" y="8" width="30" height="30"/>
-                                        <state key="normal" title="⚡️"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRK-JA-D2T">
+                                        <rect key="frame" x="347" y="8" width="59" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="I2P-3b-Vhz"/>
+                                            <constraint firstAttribute="width" constant="59" id="JDR-7Y-ozl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" image="play.slash" catalog="system"/>
                                         <connections>
                                             <action selector="btnMessagePressed:" destination="HGb-Sn-yrL" eventType="touchUpInside" id="d7t-zd-Jc4"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="7Za-XX-5Aq" firstAttribute="top" secondItem="oRK-JA-D2T" secondAttribute="top" id="1pI-uy-QMv"/>
+                                    <constraint firstItem="oRK-JA-D2T" firstAttribute="top" secondItem="7Za-XX-5Aq" secondAttribute="top" id="2fK-6S-aqD"/>
                                     <constraint firstItem="7Za-XX-5Aq" firstAttribute="leading" secondItem="5x8-e2-JAW" secondAttribute="leadingMargin" id="GCl-A5-moo"/>
                                     <constraint firstItem="7Za-XX-5Aq" firstAttribute="top" secondItem="5x8-e2-JAW" secondAttribute="topMargin" id="Kxe-87-dw6"/>
                                     <constraint firstAttribute="bottom" secondItem="7Za-XX-5Aq" secondAttribute="bottom" constant="29" id="OxD-ES-DnG"/>
-                                    <constraint firstItem="oRK-JA-D2T" firstAttribute="leading" secondItem="7Za-XX-5Aq" secondAttribute="trailing" constant="8" id="pNc-by-aym"/>
+                                    <constraint firstItem="oRK-JA-D2T" firstAttribute="trailing" secondItem="5x8-e2-JAW" secondAttribute="trailingMargin" id="R4c-UA-Wft"/>
+                                    <constraint firstItem="oRK-JA-D2T" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7Za-XX-5Aq" secondAttribute="trailing" constant="8" symbolic="YES" id="eKL-wx-dPk"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -266,7 +272,7 @@
                         <constraints>
                             <constraint firstItem="5x8-e2-JAW" firstAttribute="centerX" secondItem="6Eh-Vr-ig7" secondAttribute="centerX" id="1DE-kT-o3X"/>
                             <constraint firstItem="5x8-e2-JAW" firstAttribute="leading" secondItem="oOy-LK-TWe" secondAttribute="leading" id="8sG-yT-iqS"/>
-                            <constraint firstItem="5x8-e2-JAW" firstAttribute="top" secondItem="aRy-eh-dv4" secondAttribute="bottom" constant="17" id="BHL-sW-ixr"/>
+                            <constraint firstItem="5x8-e2-JAW" firstAttribute="top" secondItem="aRy-eh-dv4" secondAttribute="bottom" constant="-8" id="BHL-sW-ixr"/>
                             <constraint firstItem="aRy-eh-dv4" firstAttribute="top" secondItem="6Eh-Vr-ig7" secondAttribute="topMargin" constant="-44" id="CVT-9A-hAc"/>
                             <constraint firstItem="5x8-e2-JAW" firstAttribute="leading" secondItem="aRy-eh-dv4" secondAttribute="leading" id="QwK-Ap-OKv"/>
                             <constraint firstItem="5x8-e2-JAW" firstAttribute="trailing" secondItem="aRy-eh-dv4" secondAttribute="trailing" id="RnP-QB-ANq"/>
@@ -308,6 +314,7 @@
     </designables>
     <resources>
         <image name="chatImage" width="360" height="360"/>
+        <image name="play.slash" catalog="system" width="120" height="128"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

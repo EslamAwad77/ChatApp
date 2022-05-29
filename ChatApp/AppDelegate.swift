@@ -9,7 +9,7 @@ import UIKit
 import PushNotifications
 import FirebaseMessaging
 import FirebaseCore
-
+import IQKeyboardManagerSwift
 
 
 @main
@@ -25,6 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         try! self.pushNotifications.addDeviceInterest(interest: "debug-test")
         self.pushNotifications.registerForRemoteNotifications()
         FirebaseApp.configure()
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        
         return true
     }
     

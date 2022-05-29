@@ -12,6 +12,7 @@ target 'ChatApp' do
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
   pod 'CLTypingLabel'
+  pod 'IQKeyboardManagerSwift'
   
   target 'ChatAppTests' do
     inherit! :search_paths

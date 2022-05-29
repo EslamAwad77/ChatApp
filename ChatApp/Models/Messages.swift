@@ -8,6 +8,9 @@
 import Foundation
 
 struct Messages {
+    
+    //---------------------- Properties ---------------
+    
     var sender: String
     var body: String
 }

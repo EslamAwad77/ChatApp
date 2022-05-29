@@ -10,9 +10,13 @@ import FirebaseAuth
 import FirebaseFirestore
 
 class RegisterViewController: UIViewController {
-
+    
+    //---------------------- outlet ---------------
+    
     @IBOutlet weak var txtFieldUserName: UITextField!
     @IBOutlet weak var txtFieldPassword: UITextField!
+    
+    //---------------------- Actions ---------------
     
     @IBAction func btnRegister(_ sender: UIButton) {
         if let email = txtFieldUserName.text, let password = txtFieldPassword.text {
@@ -27,6 +31,8 @@ class RegisterViewController: UIViewController {
         }
         
     }
+    
+    //---------------------- LifeCycle ---------------
     override func viewDidLoad() {
         super.viewDidLoad()
 
