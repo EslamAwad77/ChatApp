@@ -23,10 +23,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chatImage" translatesAutoresizingMaskIntoConstraints="NO" id="YGu-ob-jqL">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="358"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="360"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Chat App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amO-Gy-eOT" customClass="CLTypingLabel" customModule="CLTypingLabel">
-                                                <rect key="frame" x="0.0" y="414" width="414" height="48"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="My Chat App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amO-Gy-eOT" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                                                <rect key="frame" x="0.0" y="416" width="414" height="46"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -36,6 +36,7 @@
                                                 <color key="backgroundColor" systemColor="linkColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Wg3-ul-3mg"/>
+                                                    <constraint firstAttribute="height" constant="100" id="hV6-Wf-SQD"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="register">
@@ -49,6 +50,7 @@
                                                 <rect key="frame" x="0.0" y="674" width="414" height="100"/>
                                                 <color key="backgroundColor" systemColor="linkColor"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="WsZ-kp-eV7"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="ZAD-e3-XPU"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -236,17 +238,25 @@
                                 <rect key="frame" x="0.0" y="825" width="414" height="71"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="write a new message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Za-XX-5Aq">
-                                        <rect key="frame" x="8" y="8" width="331" height="34"/>
+                                        <rect key="frame" x="8" y="8" width="285" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="331" id="zpN-3x-D6w"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="285" id="zpN-3x-D6w"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJI-fT-pHi">
+                                        <rect key="frame" x="340" y="6" width="74" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="camera.circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="btnImageMessage:" destination="HGb-Sn-yrL" eventType="touchUpInside" id="jp1-he-GQq"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRK-JA-D2T">
-                                        <rect key="frame" x="347" y="8" width="59" height="34"/>
+                                        <rect key="frame" x="301" y="1" width="59" height="63"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="I2P-3b-Vhz"/>
+                                            <constraint firstAttribute="height" constant="63" id="I2P-3b-Vhz"/>
                                             <constraint firstAttribute="width" constant="59" id="JDR-7Y-ozl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -258,11 +268,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="oRK-JA-D2T" firstAttribute="top" secondItem="7Za-XX-5Aq" secondAttribute="top" id="2fK-6S-aqD"/>
+                                    <constraint firstItem="oRK-JA-D2T" firstAttribute="top" secondItem="7Za-XX-5Aq" secondAttribute="top" constant="-7" id="2fK-6S-aqD"/>
                                     <constraint firstItem="7Za-XX-5Aq" firstAttribute="leading" secondItem="5x8-e2-JAW" secondAttribute="leadingMargin" id="GCl-A5-moo"/>
                                     <constraint firstItem="7Za-XX-5Aq" firstAttribute="top" secondItem="5x8-e2-JAW" secondAttribute="topMargin" id="Kxe-87-dw6"/>
                                     <constraint firstAttribute="bottom" secondItem="7Za-XX-5Aq" secondAttribute="bottom" constant="29" id="OxD-ES-DnG"/>
-                                    <constraint firstItem="oRK-JA-D2T" firstAttribute="trailing" secondItem="5x8-e2-JAW" secondAttribute="trailingMargin" id="R4c-UA-Wft"/>
+                                    <constraint firstItem="oRK-JA-D2T" firstAttribute="trailing" secondItem="5x8-e2-JAW" secondAttribute="trailingMargin" constant="-46" id="R4c-UA-Wft"/>
                                     <constraint firstItem="oRK-JA-D2T" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7Za-XX-5Aq" secondAttribute="trailing" constant="8" symbolic="YES" id="eKL-wx-dPk"/>
                                 </constraints>
                             </view>
@@ -308,11 +318,10 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="amO-Gy-eOT">
-            <size key="intrinsicContentSize" width="224" height="48"/>
-        </designable>
+        <designable name="amO-Gy-eOT"/>
     </designables>
     <resources>
+        <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
         <image name="chatImage" width="360" height="360"/>
         <image name="play.slash" catalog="system" width="120" height="128"/>
         <systemColor name="linkColor">

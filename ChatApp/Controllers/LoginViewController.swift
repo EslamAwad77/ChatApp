@@ -16,7 +16,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var txtFieldLogin: UITextField!
     @IBOutlet weak var txtFieldPassword: UITextField!
     
-    
     //__________________ Actions _________________
     
     @IBAction func btnLogin(_ sender: UIButton) {
@@ -30,7 +29,6 @@ class LoginViewController: UIViewController {
                 }
             }
         }
-        
     }
     
     //__________________ LifeCycle _________________
@@ -47,7 +45,5 @@ class LoginViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false
     }
-
-
 }
 

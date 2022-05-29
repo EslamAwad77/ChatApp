@@ -40,7 +40,10 @@ class ChattViewController: UIViewController {
             }
         }
     }
-
+    @IBAction func btnImageMessage(_ sender: UIButton) {
+        
+    }
+    
     //---------------------- LifeCycle ---------------
     
     override func viewDidLoad() {
@@ -70,7 +73,6 @@ class ChattViewController: UIViewController {
                         }
                     }
                 }
-                
             }
         }
     }
@@ -87,10 +89,7 @@ extension ChattViewController: UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
         cell.layer.cornerRadius = cell.frame.size.height / 5
         cell.textLabel?.text = messages[indexPath.row].body
-        cell.textLabel?.textColor = UIColor(named: "whiteColor")
-        
+        cell.textLabel?.textColor = UIColor.white
         return cell
     }
-    
-    
 }
