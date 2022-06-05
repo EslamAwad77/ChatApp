@@ -13,4 +13,11 @@ struct Messages {
     
     var sender: String
     var body: String
+    
+    var type: MessageType
+}
+
+enum MessageType: String {
+    case text = "TEXT"
+    case image = "IMAGE"
 }

@@ -17,6 +17,9 @@
 		C97059FE28427D36001E0478 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97059FD28427D36001E0478 /* RegisterViewController.swift */; };
 		C9705A0928428941001E0478 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9705A0828428941001E0478 /* Messages.swift */; };
 		C9705A1B28428AC5001E0478 /* ChattViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9705A1A28428AC5001E0478 /* ChattViewController.swift */; };
+		C9963D24284CB9030095A5ED /* TableViewCellForImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9963D22284CB9030095A5ED /* TableViewCellForImage.swift */; };
+		C9963D25284CB9030095A5ED /* TableViewCellForImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9963D23284CB9030095A5ED /* TableViewCellForImage.xib */; };
+		C99FC0EB28435FEE00258674 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99FC0EA28435FEE00258674 /* StorageManager.swift */; };
 		C9FF63E3283E52F000C47197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF63E2283E52F000C47197 /* AppDelegate.swift */; };
 		C9FF63E5283E52F000C47197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF63E4283E52F000C47197 /* SceneDelegate.swift */; };
 		C9FF63E7283E52F000C47197 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FF63E6283E52F000C47197 /* LoginViewController.swift */; };
@@ -59,6 +62,9 @@
 		C97059FD28427D36001E0478 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C9705A0828428941001E0478 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		C9705A1A28428AC5001E0478 /* ChattViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattViewController.swift; sourceTree = "<group>"; };
+		C9963D22284CB9030095A5ED /* TableViewCellForImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellForImage.swift; sourceTree = "<group>"; };
+		C9963D23284CB9030095A5ED /* TableViewCellForImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellForImage.xib; sourceTree = "<group>"; };
+		C99FC0EA28435FEE00258674 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		C9FF63DF283E52F000C47197 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9FF63E2283E52F000C47197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9FF63E4283E52F000C47197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +151,8 @@
 				C9FF63E8283E52F000C47197 /* Main.storyboard */,
 				C97059D92842766B001E0478 /* TableViewCell.swift */,
 				C97059DA2842766B001E0478 /* TableViewCell.xib */,
+				C9963D22284CB9030095A5ED /* TableViewCellForImage.swift */,
+				C9963D23284CB9030095A5ED /* TableViewCellForImage.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				C9705A0828428941001E0478 /* Messages.swift */,
+				C99FC0EA28435FEE00258674 /* StorageManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9FF63EF283E52F000C47197 /* LaunchScreen.storyboard in Resources */,
+				C9963D25284CB9030095A5ED /* TableViewCellForImage.xib in Resources */,
 				C97059DC2842766B001E0478 /* TableViewCell.xib in Resources */,
 				C9FF63EC283E52F000C47197 /* Assets.xcassets in Resources */,
 				C97059D2284270FF001E0478 /* GoogleService-Info.plist in Resources */,
@@ -454,8 +464,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9FF63E7283E52F000C47197 /* LoginViewController.swift in Sources */,
+				C9963D24284CB9030095A5ED /* TableViewCellForImage.swift in Sources */,
 				C9705A1B28428AC5001E0478 /* ChattViewController.swift in Sources */,
 				C9705A0928428941001E0478 /* Messages.swift in Sources */,
+				C99FC0EB28435FEE00258674 /* StorageManager.swift in Sources */,
 				C97059B128426C8E001E0478 /* WelcomeViewController.swift in Sources */,
 				C97059FE28427D36001E0478 /* RegisterViewController.swift in Sources */,
 				C9FF63E3283E52F000C47197 /* AppDelegate.swift in Sources */,

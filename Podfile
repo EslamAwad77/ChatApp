@@ -13,7 +13,8 @@ target 'ChatApp' do
   pod 'FirebaseFirestore'
   pod 'CLTypingLabel'
   pod 'IQKeyboardManagerSwift'
-  //pod 'FirebaseStorage'
+  pod 'FirebaseStorage'
+  pod 'Kingfisher'
   
   target 'ChatAppTests' do
     inherit! :search_paths

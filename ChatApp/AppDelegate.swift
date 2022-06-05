@@ -10,6 +10,7 @@ import PushNotifications
 import FirebaseMessaging
 import FirebaseCore
 import IQKeyboardManagerSwift
+import FirebaseStorage
 
 
 @main
@@ -25,6 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         try! self.pushNotifications.addDeviceInterest(interest: "debug-test")
         self.pushNotifications.registerForRemoteNotifications()
         FirebaseApp.configure()
+        
+        //let storage = Storage.storage(url:"images/static")
+        //let storage = Storage.storage(app:ChatApp)
+        //let storage = Storage.storage(app:ChatApp, url:"Desktop/Training/ChatApp")
+        
         UNUserNotificationCenter.current().delegate = self
         let autoOptions: UNAuthorizationOptions = [.alert, .sound, .badge]
         UNUserNotificationCenter.current().requestAuthorization(options: autoOptions) { (success, error) in

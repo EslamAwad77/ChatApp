@@ -24,6 +24,7 @@ class RegisterViewController: UIViewController {
                 if let e = error{
                     print(e.localizedDescription)
                 }else{
+                    
                     let vc = UIStoryboard(name:"Main", bundle: nil).instantiateViewController(identifier: "ChatVC") as! ChattViewController
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
