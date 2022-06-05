@@ -8,6 +8,12 @@ target 'ChatApp' do
   # Pods for ChatApp
   
   pod 'PushNotifications', '~> 4.0.0'
+  pod 'FirebaseMessaging'
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
+  pod 'CLTypingLabel'
+  pod 'IQKeyboardManagerSwift'
+  //pod 'FirebaseStorage'
   
   target 'ChatAppTests' do
     inherit! :search_paths
